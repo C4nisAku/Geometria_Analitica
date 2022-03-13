@@ -7,6 +7,7 @@ class matematica():
     
 class geometria_Analitica(): 
     class vetor(matematica):
+
         def expressao_Analitica(xA,yA,xB,yB):
             x = xA - xB  
             y = yA - yB

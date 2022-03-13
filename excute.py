@@ -1,10 +1,8 @@
 import main
+import call
 
-class exc():
-    a = main.geometria_Analitica
-    b = main.geometria_Analitica
-    c = main.geometria_Analitica
-    r2 = main.vetor_R2
+class Exc():
+    a = call.Select
 
     opcao = int(input("""
     Insira 1: Geometria Ánalitica
@@ -12,34 +10,15 @@ class exc():
     Insira: """))
 
     if opcao == 1:      
-        opcao = int(input("""
-        Insira 1: Calculo de vetor
-        Insira 2: Soma de dois vetores
-        Insira 3  Soma de varios vetores
-        Insira 4: Vetor R2
-        Insira 5: Produto escalar de 2 vetores no R2
-        Insira: """))
-
-        if opcao == 1: #Calcula o Vetor
-            x = int(input("Insira X:"))
-            y = int(input("Insira Y:"))
-            a = a.calcula_Vetor(1,x,y)
-
-            p1 = str(input("Deseja Adicionar a soma ? S/N: "))
-
-            if p1 == "S" or "s":                
-                p1 = str(input("Você ja possui o Vetor? S/N: "))                
-                if p1 == "S" :
-                    v1 = int(input("Insira o Vetor: "))
-                    c.soma_De_Vetores(1,a,v1)    
-                elif p1== "N" or "n":    
-                    print("Insira Proximo calculo do vetor: ")
-                    x = int(input("Insira X: "))
-                    y = int(input("Insira Y: "))
-                    b =b.calcula_Vetor(1,x,y)
-                    c.soma_De_Vetores(1,a,b)
-                else:
-                    print("Por favor renicie o Aplicativo...")
+            opcao = int(input("""
+            Insira 1: Expressão Analitica
+            Insira 2: Soma de dois vetores
+            Insira 3  Soma de varios vetores
+            Insira 4: Vetor R2
+            Insira 5: Produto escalar de 2 vetores no R2
+            Insira: """))
+        if opcao == 1:
+            a.geo_opcao_1()
 
         if opcao == 2: #Soma de dois vetores
             print("Insira o vetor A é B")            
