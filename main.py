@@ -11,14 +11,16 @@ class geometria_Analitica():
         def expressao_Analitica(xA,yA,xB,yB):
             x = xA - xB  
             y = yA - yB
-            print(f"{x};{y}")            
+            print(f"Resultado: (x {x};y {y})")
+            return x , y
         
         def modulo_Do_Vetor(x,y):
             x1 = x * x
             y1 = y * y
             s  = x1 + y1
             raiz = matematica.raiz_quadrada(s)
-            return raiz , s
+            print(f"""Modulo sem raiz calculada: {s}
+            Modulo com raiz calculada {raiz}""")
 
         def soma_De_Vetores(n,a,b,c,d,f):
             if n == 2 :
