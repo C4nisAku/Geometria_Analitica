@@ -25,16 +25,16 @@ class geometria_Analitica():
         def soma_De_Vetores(n,a,b,c,d,f):
             if n == 2 :
                 s = a * a + b * b
-                return s 
+                print(f"O Resultado é: {s}") 
             elif n == 3:
                 s = a * a + b * b + c * c
-                return s
+                print(f"O Resultado é: {s}") 
             elif n == 4:
                 s = a * a + b * b + c * c + d * d
-                return s
+                print(f"O Resultado é: {s}") 
             elif n == 5:
                 s = a * a + b * b + c * c + d * d + f * f
-                return s  
+                print(f"O Resultado é: {s}")   
      
     class vetor_R2(matematica):
         def expressao_Analitica(xA,yA,xB,yB):
