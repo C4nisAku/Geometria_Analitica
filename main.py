@@ -4,7 +4,7 @@ class matematica():
     def raiz_quadrada(raiz):
         r = math.sqrt(raiz)
         return r    
-
+    
 class geometria_Analitica(): 
     class vetor(matematica):
         def expressao_Analitica(xA,yA,xB,yB):
