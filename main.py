@@ -11,7 +11,7 @@ class geometria_Analitica():
         def expressao_Analitica(xA,yA,xB,yB):
             x = xA - xB  
             y = yA - yB
-            return (f"{x};{y}")            
+            print(f"{x};{y}")            
         
         def modulo_Do_Vetor(x,y):
             x1 = x * x
