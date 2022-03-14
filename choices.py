@@ -12,10 +12,11 @@ class Select(staticmethod):
    
     def escolha():
         valor = int(input("""Digite:
-        1 - Expressão Analítica
+        1 - Expressao Analitica
         2 - Modulo do Vetor
         3 - Soma de Vetores
         4 - Produto Escalar
+        - 5 - em breve
         Insira o numero: """))
         print("")
         return valor
@@ -37,7 +38,7 @@ class Select(staticmethod):
             s = main.geometria_Analitica.vetor_R2
             s.expressao_Analitica(xA,yA,xB,yB)
         elif i == 3:
-            print("Ainda não esta pronto.")
+            print("Ainda nao esta pronto.")
         else:
             print("Insira um dos 3 Valores")
             
@@ -76,7 +77,7 @@ class Select(staticmethod):
             print("Retorne um numero adquado.")
 
     def geo_opcao_4(): #Produto Escalar
-        print("Opção: Produto escalar.")
+        print("Opcao: Produto escalar.")
         xA = int(input("Insira o valor de xA:"))
         xB = int(input("Insira o valor de xB:"))
         yA = int(input("Insira o valor de yA:"))
