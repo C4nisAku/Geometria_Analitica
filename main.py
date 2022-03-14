@@ -43,7 +43,6 @@ class geometria_Analitica():
             s = x * x + y * y
             raiz = matematica.raiz_quadrada(s)
 
-            #Print
             print("Vetor: ")
             print(f"X:{x}    Y:{y}")
 

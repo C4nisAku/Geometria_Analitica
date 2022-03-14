@@ -1,8 +1,10 @@
-import select
+import choices
 
 class Exc():
-    a = select.Select    
+    a = choices.Select    
+
     seletor_geo_alg = a.opcao()
+
     if seletor_geo_alg == 1:      
         opcao = a.escolha()
         if   opcao == 1:
@@ -12,7 +14,7 @@ class Exc():
         elif opcao == 3:
             a.geo_opcao_3()
         elif opcao == 4:
-            pass
+            a.geo_opcao_4()
         elif opcao == 5:
             pass
 

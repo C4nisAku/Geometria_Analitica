@@ -13,18 +13,32 @@ class Select(staticmethod):
         1 - Expressão Analítica
         2 - Modulo do Vetor
         3 - Soma de Vetores
+        4 - Produto Escalar
         Insira o numero: """))
         print("")
         return valor
 
     def geo_opcao_1(): #Expressão Analítica.
-        xA = int(input("Insira o valor de xA:"))
-        xB = int(input("Insira o valor de xB:"))
-        yA = int(input("Insira o valor de yA:"))
-        yB = int(input("Insira o valor de yB:"))
-        s = main.geometria_Analitica.vetor
-        s.expressao_Analitica(xA,yA,xB,yB)   
-  
+        i = int(input("Digite o R: 1,2,3"))
+        if i == 1:
+            xA = int(input("Insira o valor de xA:"))
+            xB = int(input("Insira o valor de xB:"))
+            yA = int(input("Insira o valor de yA:"))
+            yB = int(input("Insira o valor de yB:"))
+            s = main.geometria_Analitica.vetor
+            s.expressao_Analitica(xA,yA,xB,yB)
+        elif i == 2:
+            xA = int(input("Insira o valor de xA:"))
+            xB = int(input("Insira o valor de xB:"))
+            yA = int(input("Insira o valor de yA:"))
+            yB = int(input("Insira o valor de yB:"))
+            s = main.geometria_Analitica.vetor_R2
+            s.expressao_Analitica(xA,yA,xB,yB)
+        elif i == 3:
+            print("Ainda não esta pronto.")
+        else:
+            print("Insira um dos 3 Valores")
+            
     def geo_opcao_2(): #Modulo do Vetor.
         x = int(input("Insira o valor de x:"))
         y = int(input("Insira o valor de y:"))
@@ -58,3 +72,11 @@ class Select(staticmethod):
             r.soma_De_Vetores(v,a,b,c,d,f)
         else:
             print("Retorne um numero adquado.")
+
+    def geo_opcao_4(): #Produto Escalar
+        print("Opção: Produto escalar.")
+        xA = int(input("Insira o valor de xA:"))
+        xB = int(input("Insira o valor de xB:"))
+        yA = int(input("Insira o valor de yA:"))
+        yB = int(input("Insira o valor de yB:"))
+        s = main.geometria_Analitica.vetor_R2.produto_escalar_2(xA,yA,xB,yB)
