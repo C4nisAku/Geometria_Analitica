@@ -1,5 +1,4 @@
 import choices
-
 class Exc():
     a = choices.Select    
 

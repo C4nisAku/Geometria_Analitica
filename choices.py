@@ -1,6 +1,8 @@
 import main
 
+
 class Select(staticmethod):  
+
     def opcao():
      a = int(input("""
         Insira 1: Geometria Analitica
